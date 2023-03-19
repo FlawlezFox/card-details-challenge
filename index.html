@@ -12,6 +12,56 @@
 </head>
 <body>
 
+  <div class="cards-container">
+    <div class="card card-front">
+      <div class="logo">
+        <img src="/images/card-logo.svg" alt="logo.svg">
+      </div>
+
+      <span class="card-num" id="card-num">0000 0000 0000 0000</span>
+
+      <div class="card-bottom-info">
+        <span class="card-name" id="card-name">Jane Appleseed</span>
+
+        <span class="card-exp-date" id="card-exp-date">00/00</span>
+      </div>
+    </div>
+
+    <div class="card card-back">
+      <span class="card-cvc-code" id="card-cvc-code">000</span>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <form class="form-container">
+      <div class="name-input">
+        <span class="name-input-text">Cardholder Name</span>
+        <input type="text" id="name-input" placeholder="e.g. Jane Appleseed">
+      </div>
+      
+      <div class="number-input">
+        <span class="number-input-text">Card Number</span>
+        <input type="text" id="number-input" placeholder="e.g. 1234 5678 9123 0000">
+      </div>
+
+      <div class="bottom-info-input">
+        <div class="date-input">
+          <span class="date-input-text">Exp. Date (MM/YY)</span>
+          <input type="text" id="date-month-input" placeholder="MM">
+
+          <input type="text" id="date-year-input" placeholder="YY">
+        </div>
+
+        <div class="cvc-input">
+          <span class="cvc-input-text">CVC</span>
+          <input type="text" id="cvc-input" placeholder="e.g. 123">
+        </div>
+      </div>
+
+      <button type="submit" class="submit-button">Confirm</button>
+    </form>
+  </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/FlawlezFox" target="_blank">Flawlez</a>.
