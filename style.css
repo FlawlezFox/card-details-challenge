@@ -5,11 +5,13 @@
     --light-grayish-violet: hsl(270, 3%, 87%);
     --dark-grayish-violet: hsl(279, 6%, 55%);
     --very-dark-violet: hsl(278, 68%, 11%);
+    --red: hsl(0, 100%, 66%);
+    --active-input-border: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
 }
 
 /* Table of contents
     1. Global Styles
-    2. Layouts
+    2. Typography
     3. Component
     
     ... May add some later */
@@ -21,5 +23,73 @@
 *{
     font-size: 18px;
     font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+}
+
+.complete-state {
+    visibility: hidden;
+
+    position: absolute;
+    z-index: -1;
+}
+
+/* ================
+   2. Typography
+   ================ */
+
+/* ================
+   3. Components
+   ================ */
+
+.cards-container {
+    width: 375px;
+
+    margin-bottom: 6em;
+
+    display: flex;
+    flex-flow: column-reverse;
+
+    background: url("/images/bg-main-mobile.png") no-repeat;
+
+    position: relative;
+
+    letter-spacing: 2px;
+}
+
+.cards-container img {
+    width: 75%;
+}
+
+.card-front,
+.card-back {
+    color: var(--white);
+    position: absolute;
+}
+
+.logo img{
+    width: 25%;
+}
+
+.card-name,
+.card-exp-date,
+.card-cvc-code {
+    font-size: .6rem;
+    text-transform: uppercase;
+}
+
+.card-num {
+    margin-bottom: .5em;
+}
+
+.card-bottom-info {
+    display: flex;
+    justify-content: space-between;
 }
